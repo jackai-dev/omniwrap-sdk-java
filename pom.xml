@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.omniwrap.generated</groupId>
+  <artifactId>omniwrap-sdk</artifactId>
+  <version>1.0.0</version>
+  <description>Official OmniWrap Polyglot SDK Factory, Agentic MCP Server, GitHub Multi-Repo Sync &amp; Multi-Surface Control Plane API.</description>
+  <licenses><license><name>Proprietary</name></license></licenses>
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build>
+    <resources>
+      <resource>
+        <directory>${project.basedir}</directory>
+        <includes>
+          <include>api.md</include>
+          <include>LICENSE</include>
+          <include>omniwrap-artifact.json</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+</project>
