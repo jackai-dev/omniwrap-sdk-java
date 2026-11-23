@@ -1,0 +1,132 @@
+{
+  "contract_fingerprint": "2289bcb0d661bdea6dd47c7967f37aace7d3a152e18e7d2f64c08514fb73e795",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "dev.omniwrap.generated:omniwrap-sdk:1.0.0",
+        "ecosystem": "Maven",
+        "entry": "dev.omniwrap.omniwrap.sdk.ApiClient",
+        "import": "import dev.omniwrap.omniwrap.sdk.ApiClient;"
+      },
+      "operations": {
+        "cancelPreview": {
+          "member": "previews().cancel",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/cancel",
+          "resource": "previews()",
+          "signature": "public CancellationReceipt cancel(OpaqueId projectId, OpaqueId previewId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, CancelRequest body)\npublic CompletableFuture<CancellationReceipt> cancelAsync(OpaqueId projectId, OpaqueId previewId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, CancelRequest body)\npublic ApiResponse<CancellationReceipt> cancelWithResponse(OpaqueId projectId, OpaqueId previewId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, CancelRequest body)\npublic CompletableFuture<ApiResponse<CancellationReceipt>> cancelWithResponseAsync(OpaqueId projectId, OpaqueId previewId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, CancelRequest body)\npublic CancellationReceipt cancel(OpaqueId projectId, OpaqueId previewId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, CancelRequest body, RequestOptions requestOptions)\npublic CompletableFuture<CancellationReceipt> cancelAsync(OpaqueId projectId, OpaqueId previewId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, CancelRequest body, RequestOptions requestOptions)\npublic ApiResponse<CancellationReceipt> cancelWithResponse(OpaqueId projectId, OpaqueId previewId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, CancelRequest body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<CancellationReceipt>> cancelWithResponseAsync(OpaqueId projectId, OpaqueId previewId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, CancelRequest body, RequestOptions requestOptions)"
+        },
+        "createConfigurationRevision": {
+          "member": "configurations().createRevision",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/configuration-revisions",
+          "resource": "configurations()",
+          "signature": "public ConfigurationRevision createRevision(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, ConfigurationRequest body)\npublic CompletableFuture<ConfigurationRevision> createRevisionAsync(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, ConfigurationRequest body)\npublic ApiResponse<ConfigurationRevision> createRevisionWithResponse(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, ConfigurationRequest body)\npublic CompletableFuture<ApiResponse<ConfigurationRevision>> createRevisionWithResponseAsync(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, ConfigurationRequest body)\npublic ConfigurationRevision createRevision(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, ConfigurationRequest body, RequestOptions requestOptions)\npublic CompletableFuture<ConfigurationRevision> createRevisionAsync(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, ConfigurationRequest body, RequestOptions requestOptions)\npublic ApiResponse<ConfigurationRevision> createRevisionWithResponse(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, ConfigurationRequest body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<ConfigurationRevision>> createRevisionWithResponseAsync(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, ConfigurationRequest body, RequestOptions requestOptions)"
+        },
+        "createPreview": {
+          "member": "previews().create",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/previews",
+          "resource": "previews()",
+          "signature": "public Preview create(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, PreviewRequest body)\npublic CompletableFuture<Preview> createAsync(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, PreviewRequest body)\npublic ApiResponse<Preview> createWithResponse(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, PreviewRequest body)\npublic CompletableFuture<ApiResponse<Preview>> createWithResponseAsync(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, PreviewRequest body)\npublic Preview create(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, PreviewRequest body, RequestOptions requestOptions)\npublic CompletableFuture<Preview> createAsync(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, PreviewRequest body, RequestOptions requestOptions)\npublic ApiResponse<Preview> createWithResponse(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, PreviewRequest body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Preview>> createWithResponseAsync(OpaqueId projectId, StrongEtag ifMatch, String idempotencyKey, String xCSRFToken, PreviewRequest body, RequestOptions requestOptions)"
+        },
+        "createSourceRevision": {
+          "member": "sources().createRevision",
+          "method": "POST",
+          "path": "/v1/projects/{projectId}/source-revisions",
+          "resource": "sources()",
+          "signature": "public SourceRevision createRevision(OpaqueId projectId, String idempotencyKey, String xCSRFToken, String displayName, Object body)\npublic CompletableFuture<SourceRevision> createRevisionAsync(OpaqueId projectId, String idempotencyKey, String xCSRFToken, String displayName, Object body)\npublic ApiResponse<SourceRevision> createRevisionWithResponse(OpaqueId projectId, String idempotencyKey, String xCSRFToken, String displayName, Object body)\npublic CompletableFuture<ApiResponse<SourceRevision>> createRevisionWithResponseAsync(OpaqueId projectId, String idempotencyKey, String xCSRFToken, String displayName, Object body)\npublic SourceRevision createRevision(OpaqueId projectId, String idempotencyKey, String xCSRFToken, String displayName, Object body, RequestOptions requestOptions)\npublic CompletableFuture<SourceRevision> createRevisionAsync(OpaqueId projectId, String idempotencyKey, String xCSRFToken, String displayName, Object body, RequestOptions requestOptions)\npublic ApiResponse<SourceRevision> createRevisionWithResponse(OpaqueId projectId, String idempotencyKey, String xCSRFToken, String displayName, Object body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<SourceRevision>> createRevisionWithResponseAsync(OpaqueId projectId, String idempotencyKey, String xCSRFToken, String displayName, Object body, RequestOptions requestOptions)"
+        },
+        "getArtifact": {
+          "member": "artifacts().get",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/artifacts/{artifactId}",
+          "resource": "artifacts()",
+          "signature": "public Artifact get(OpaqueId projectId, OpaqueId artifactId)\npublic CompletableFuture<Artifact> getAsync(OpaqueId projectId, OpaqueId artifactId)\npublic ApiResponse<Artifact> getWithResponse(OpaqueId projectId, OpaqueId artifactId)\npublic CompletableFuture<ApiResponse<Artifact>> getWithResponseAsync(OpaqueId projectId, OpaqueId artifactId)\npublic Artifact get(OpaqueId projectId, OpaqueId artifactId, RequestOptions requestOptions)\npublic CompletableFuture<Artifact> getAsync(OpaqueId projectId, OpaqueId artifactId, RequestOptions requestOptions)\npublic ApiResponse<Artifact> getWithResponse(OpaqueId projectId, OpaqueId artifactId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Artifact>> getWithResponseAsync(OpaqueId projectId, OpaqueId artifactId, RequestOptions requestOptions)"
+        },
+        "getConfigurationRevision": {
+          "member": "configurations().getRevision",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/configuration-revisions/{revisionId}",
+          "resource": "configurations()",
+          "signature": "public ConfigurationRevision getRevision(OpaqueId projectId, OpaqueId revisionId)\npublic CompletableFuture<ConfigurationRevision> getRevisionAsync(OpaqueId projectId, OpaqueId revisionId)\npublic ApiResponse<ConfigurationRevision> getRevisionWithResponse(OpaqueId projectId, OpaqueId revisionId)\npublic CompletableFuture<ApiResponse<ConfigurationRevision>> getRevisionWithResponseAsync(OpaqueId projectId, OpaqueId revisionId)\npublic ConfigurationRevision getRevision(OpaqueId projectId, OpaqueId revisionId, RequestOptions requestOptions)\npublic CompletableFuture<ConfigurationRevision> getRevisionAsync(OpaqueId projectId, OpaqueId revisionId, RequestOptions requestOptions)\npublic ApiResponse<ConfigurationRevision> getRevisionWithResponse(OpaqueId projectId, OpaqueId revisionId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<ConfigurationRevision>> getRevisionWithResponseAsync(OpaqueId projectId, OpaqueId revisionId, RequestOptions requestOptions)"
+        },
+        "getEvidence": {
+          "member": "evidence().get",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/evidence/{evidenceId}",
+          "resource": "evidence()",
+          "signature": "public Evidence get(OpaqueId projectId, OpaqueId evidenceId)\npublic CompletableFuture<Evidence> getAsync(OpaqueId projectId, OpaqueId evidenceId)\npublic ApiResponse<Evidence> getWithResponse(OpaqueId projectId, OpaqueId evidenceId)\npublic CompletableFuture<ApiResponse<Evidence>> getWithResponseAsync(OpaqueId projectId, OpaqueId evidenceId)\npublic Evidence get(OpaqueId projectId, OpaqueId evidenceId, RequestOptions requestOptions)\npublic CompletableFuture<Evidence> getAsync(OpaqueId projectId, OpaqueId evidenceId, RequestOptions requestOptions)\npublic ApiResponse<Evidence> getWithResponse(OpaqueId projectId, OpaqueId evidenceId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Evidence>> getWithResponseAsync(OpaqueId projectId, OpaqueId evidenceId, RequestOptions requestOptions)"
+        },
+        "getPreview": {
+          "member": "previews().get",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}",
+          "resource": "previews()",
+          "signature": "public Preview get(OpaqueId projectId, OpaqueId previewId)\npublic CompletableFuture<Preview> getAsync(OpaqueId projectId, OpaqueId previewId)\npublic ApiResponse<Preview> getWithResponse(OpaqueId projectId, OpaqueId previewId)\npublic CompletableFuture<ApiResponse<Preview>> getWithResponseAsync(OpaqueId projectId, OpaqueId previewId)\npublic Preview get(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic CompletableFuture<Preview> getAsync(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic ApiResponse<Preview> getWithResponse(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Preview>> getWithResponseAsync(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)"
+        },
+        "getPreviewEvents": {
+          "member": "previews().getEvents",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/events",
+          "resource": "previews()",
+          "signature": "public EventPage getEvents(OpaqueId projectId, OpaqueId previewId)\npublic CompletableFuture<EventPage> getEventsAsync(OpaqueId projectId, OpaqueId previewId)\npublic ApiResponse<EventPage> getEventsWithResponse(OpaqueId projectId, OpaqueId previewId)\npublic CompletableFuture<ApiResponse<EventPage>> getEventsWithResponseAsync(OpaqueId projectId, OpaqueId previewId)\npublic EventPage getEvents(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic CompletableFuture<EventPage> getEventsAsync(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic ApiResponse<EventPage> getEventsWithResponse(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<EventPage>> getEventsWithResponseAsync(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic EventPage getEvents(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, Cursor lastEventID)\npublic CompletableFuture<EventPage> getEventsAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, Cursor lastEventID)\npublic ApiResponse<EventPage> getEventsWithResponse(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, Cursor lastEventID)\npublic CompletableFuture<ApiResponse<EventPage>> getEventsWithResponseAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, Cursor lastEventID)\npublic EventPage getEvents(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, Cursor lastEventID, RequestOptions requestOptions)\npublic CompletableFuture<EventPage> getEventsAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, Cursor lastEventID, RequestOptions requestOptions)\npublic ApiResponse<EventPage> getEventsWithResponse(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, Cursor lastEventID, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<EventPage>> getEventsWithResponseAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, Cursor lastEventID, RequestOptions requestOptions)"
+        },
+        "getPreviewLogs": {
+          "member": "previews().getLogs",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/logs",
+          "resource": "previews()",
+          "signature": "public LogPage getLogs(OpaqueId projectId, OpaqueId previewId)\npublic CompletableFuture<LogPage> getLogsAsync(OpaqueId projectId, OpaqueId previewId)\npublic ApiResponse<LogPage> getLogsWithResponse(OpaqueId projectId, OpaqueId previewId)\npublic CompletableFuture<ApiResponse<LogPage>> getLogsWithResponseAsync(OpaqueId projectId, OpaqueId previewId)\npublic LogPage getLogs(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic CompletableFuture<LogPage> getLogsAsync(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic ApiResponse<LogPage> getLogsWithResponse(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<LogPage>> getLogsWithResponseAsync(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic LogPage getLogs(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String level, OpaqueId phaseId)\npublic CompletableFuture<LogPage> getLogsAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String level, OpaqueId phaseId)\npublic ApiResponse<LogPage> getLogsWithResponse(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String level, OpaqueId phaseId)\npublic CompletableFuture<ApiResponse<LogPage>> getLogsWithResponseAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String level, OpaqueId phaseId)\npublic LogPage getLogs(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String level, OpaqueId phaseId, RequestOptions requestOptions)\npublic CompletableFuture<LogPage> getLogsAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String level, OpaqueId phaseId, RequestOptions requestOptions)\npublic ApiResponse<LogPage> getLogsWithResponse(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String level, OpaqueId phaseId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<LogPage>> getLogsWithResponseAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String level, OpaqueId phaseId, RequestOptions requestOptions)"
+        },
+        "getProject": {
+          "member": "projects().get",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}",
+          "resource": "projects()",
+          "signature": "public Project get(OpaqueId projectId)\npublic CompletableFuture<Project> getAsync(OpaqueId projectId)\npublic ApiResponse<Project> getWithResponse(OpaqueId projectId)\npublic CompletableFuture<ApiResponse<Project>> getWithResponseAsync(OpaqueId projectId)\npublic Project get(OpaqueId projectId, RequestOptions requestOptions)\npublic CompletableFuture<Project> getAsync(OpaqueId projectId, RequestOptions requestOptions)\npublic ApiResponse<Project> getWithResponse(OpaqueId projectId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Project>> getWithResponseAsync(OpaqueId projectId, RequestOptions requestOptions)"
+        },
+        "getSourceRevision": {
+          "member": "sources().getRevision",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/source-revisions/{revisionId}",
+          "resource": "sources()",
+          "signature": "public SourceRevision getRevision(OpaqueId projectId, OpaqueId revisionId)\npublic CompletableFuture<SourceRevision> getRevisionAsync(OpaqueId projectId, OpaqueId revisionId)\npublic ApiResponse<SourceRevision> getRevisionWithResponse(OpaqueId projectId, OpaqueId revisionId)\npublic CompletableFuture<ApiResponse<SourceRevision>> getRevisionWithResponseAsync(OpaqueId projectId, OpaqueId revisionId)\npublic SourceRevision getRevision(OpaqueId projectId, OpaqueId revisionId, RequestOptions requestOptions)\npublic CompletableFuture<SourceRevision> getRevisionAsync(OpaqueId projectId, OpaqueId revisionId, RequestOptions requestOptions)\npublic ApiResponse<SourceRevision> getRevisionWithResponse(OpaqueId projectId, OpaqueId revisionId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<SourceRevision>> getRevisionWithResponseAsync(OpaqueId projectId, OpaqueId revisionId, RequestOptions requestOptions)"
+        },
+        "getUserContext": {
+          "member": "context().getUser",
+          "method": "GET",
+          "path": "/v1/me/context",
+          "resource": "context()",
+          "signature": "public UserContext getUser()\npublic CompletableFuture<UserContext> getUserAsync()\npublic ApiResponse<UserContext> getUserWithResponse()\npublic CompletableFuture<ApiResponse<UserContext>> getUserWithResponseAsync()\npublic UserContext getUser(RequestOptions requestOptions)\npublic CompletableFuture<UserContext> getUserAsync(RequestOptions requestOptions)\npublic ApiResponse<UserContext> getUserWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<UserContext>> getUserWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "listPreviewEvidence": {
+          "member": "evidence().listPreview",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews/{previewId}/evidence",
+          "resource": "evidence()",
+          "signature": "public EvidencePage listPreview(OpaqueId projectId, OpaqueId previewId)\npublic CompletableFuture<EvidencePage> listPreviewAsync(OpaqueId projectId, OpaqueId previewId)\npublic ApiResponse<EvidencePage> listPreviewWithResponse(OpaqueId projectId, OpaqueId previewId)\npublic CompletableFuture<ApiResponse<EvidencePage>> listPreviewWithResponseAsync(OpaqueId projectId, OpaqueId previewId)\npublic EvidencePage listPreview(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic CompletableFuture<EvidencePage> listPreviewAsync(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic ApiResponse<EvidencePage> listPreviewWithResponse(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<EvidencePage>> listPreviewWithResponseAsync(OpaqueId projectId, OpaqueId previewId, RequestOptions requestOptions)\npublic EvidencePage listPreview(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String gateId, String availability)\npublic CompletableFuture<EvidencePage> listPreviewAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String gateId, String availability)\npublic ApiResponse<EvidencePage> listPreviewWithResponse(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String gateId, String availability)\npublic CompletableFuture<ApiResponse<EvidencePage>> listPreviewWithResponseAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String gateId, String availability)\npublic EvidencePage listPreview(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String gateId, String availability, RequestOptions requestOptions)\npublic CompletableFuture<EvidencePage> listPreviewAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String gateId, String availability, RequestOptions requestOptions)\npublic ApiResponse<EvidencePage> listPreviewWithResponse(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String gateId, String availability, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<EvidencePage>> listPreviewWithResponseAsync(OpaqueId projectId, OpaqueId previewId, Cursor cursor, Long limit, String gateId, String availability, RequestOptions requestOptions)"
+        },
+        "listPreviews": {
+          "member": "previews().list",
+          "method": "GET",
+          "path": "/v1/projects/{projectId}/previews",
+          "resource": "previews()",
+          "signature": "public PreviewPage list(OpaqueId projectId)\npublic CompletableFuture<PreviewPage> listAsync(OpaqueId projectId)\npublic ApiResponse<PreviewPage> listWithResponse(OpaqueId projectId)\npublic CompletableFuture<ApiResponse<PreviewPage>> listWithResponseAsync(OpaqueId projectId)\npublic PreviewPage list(OpaqueId projectId, RequestOptions requestOptions)\npublic CompletableFuture<PreviewPage> listAsync(OpaqueId projectId, RequestOptions requestOptions)\npublic ApiResponse<PreviewPage> listWithResponse(OpaqueId projectId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<PreviewPage>> listWithResponseAsync(OpaqueId projectId, RequestOptions requestOptions)\npublic PreviewPage list(OpaqueId projectId, Cursor cursor, Long limit)\npublic CompletableFuture<PreviewPage> listAsync(OpaqueId projectId, Cursor cursor, Long limit)\npublic ApiResponse<PreviewPage> listWithResponse(OpaqueId projectId, Cursor cursor, Long limit)\npublic CompletableFuture<ApiResponse<PreviewPage>> listWithResponseAsync(OpaqueId projectId, Cursor cursor, Long limit)\npublic PreviewPage list(OpaqueId projectId, Cursor cursor, Long limit, RequestOptions requestOptions)\npublic CompletableFuture<PreviewPage> listAsync(OpaqueId projectId, Cursor cursor, Long limit, RequestOptions requestOptions)\npublic ApiResponse<PreviewPage> listWithResponse(OpaqueId projectId, Cursor cursor, Long limit, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<PreviewPage>> listWithResponseAsync(OpaqueId projectId, Cursor cursor, Long limit, RequestOptions requestOptions)"
+        },
+        "listProjects": {
+          "member": "projects().list",
+          "method": "GET",
+          "path": "/v1/projects",
+          "resource": "projects()",
+          "signature": "public ProjectPage list()\npublic CompletableFuture<ProjectPage> listAsync()\npublic ApiResponse<ProjectPage> listWithResponse()\npublic CompletableFuture<ApiResponse<ProjectPage>> listWithResponseAsync()\npublic ProjectPage list(RequestOptions requestOptions)\npublic CompletableFuture<ProjectPage> listAsync(RequestOptions requestOptions)\npublic ApiResponse<ProjectPage> listWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<ProjectPage>> listWithResponseAsync(RequestOptions requestOptions)\npublic ProjectPage list(Cursor cursor, Long limit, String queryValue)\npublic CompletableFuture<ProjectPage> listAsync(Cursor cursor, Long limit, String queryValue)\npublic ApiResponse<ProjectPage> listWithResponse(Cursor cursor, Long limit, String queryValue)\npublic CompletableFuture<ApiResponse<ProjectPage>> listWithResponseAsync(Cursor cursor, Long limit, String queryValue)\npublic ProjectPage list(Cursor cursor, Long limit, String queryValue, RequestOptions requestOptions)\npublic CompletableFuture<ProjectPage> listAsync(Cursor cursor, Long limit, String queryValue, RequestOptions requestOptions)\npublic ApiResponse<ProjectPage> listWithResponse(Cursor cursor, Long limit, String queryValue, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<ProjectPage>> listWithResponseAsync(Cursor cursor, Long limit, String queryValue, RequestOptions requestOptions)"
+        }
+      },
+      "package_directory": "../OmniWrapSdk",
+      "package_manifest": "pom.xml",
+      "reference": "api.md",
+      "renderer": "java"
+    }
+  ]
+}

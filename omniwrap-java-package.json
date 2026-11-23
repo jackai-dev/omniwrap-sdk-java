@@ -1,0 +1,10 @@
+{
+  "$schema": "https://omniwrap.dev/schemas/java-package/v2.json",
+  "archive_type": "jar",
+  "artifact_id": "omniwrap-sdk",
+  "group_id": "dev.omniwrap.generated",
+  "java_release": 17,
+  "public_entry_class": "dev.omniwrap.omniwrap.sdk.ApiClient",
+  "source_version": "1.0.0",
+  "version": "1.0.0"
+}
